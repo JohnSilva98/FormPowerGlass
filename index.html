@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulário Powerglass</title>
+  </head>
+  <body>
+    <div>
+      <h1>Powerglass</h1>
+      <p>Abertura de Ordem de Serviço</p>
+      <br />
+    </div>
+    <form action="">
+      <fieldset>
+        <div id="Data">
+          <label for="Data">Data Produção</label>
+          <input type="date" name="Data" id="Data" />
+          <label for="Funcionario">Funcionario Responsável</label>
+          <input type="text" name="Nome" id="nome" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <div id="setor">
+          <label>Setor</label>
+          <select name="Setor" id="setor">
+            <option selected disabled value="">Selecione o setor</option>
+            <option value="Corte">Corte</option>
+            <option value="Lapidacao">Lapidação</option>
+            <option value="Serigrafia">Serigrafia</option>
+            <option value="Forno">Forno</option>
+            <option value="PreSala">Pré-sala</option>
+            <option value="Salalimpa">Sala Limpa</option>
+            <option value="Autoclave">Auto-Clave</option>
+          </select>
+        </div>
+      </fieldset>
+      <div id="producao">
+        <label>Produção</label>
+        <label> <input type="radio" name="opt" />Kit completo </label>
+        <label> <input type="radio" name="opt" />Reposição </label>
+        <label> <input type="radio" name="opt" />Avulso</label>
+        <label> <input type="radio" name="opt" />Garantia </label>
+      </div>
+      <div id="modelCar">
+        <label>Modelo Carro</label>
+        <input type="text" />
+      </div>
+      <fieldset>
+        <div id="corvidro">
+          <label>Cor Vidro</label>
+          <select name="Vidro" id="corvidro">
+            <option selected disabled value="">Selecione</option>
+            <option value="incolor">Incolor</option>
+            <option value="fume">Fume</option>
+            <option value="Verde">Verde</option>
+          </select>
+        </div>
+        <div id="sensor">
+          <label>Sensor</label>
+          <select name="sensor" id="sensor">
+            <option selected disabled value="">Selecione</option>
+            <option value="nosensor">Sem sensor</option>
+            <option value="sensor">Com sensor</option>
+            <option value="sensorcam">Sensor e câmera</option>
+          </select>
+        </div>
+        <div id="teto">
+          <label>Teto</label>
+          <select name="sensor" id="sensor">
+            <option selected disabled value="">Selecione</option>
+            <option value="nosensor">TSA</option>
+            <option value="sensor">TSA e TSB</option>
+            <option value="sensorcam">TSP</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
