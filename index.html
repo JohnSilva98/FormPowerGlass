@@ -7,7 +7,7 @@
     <title>Formulário Powerglass</title>
   </head>
   <body>
-    <div>
+    <div class="campo" id="head">
       <h1 id="title">Powerglass</h1>
       <p id="subt">Abertura de Ordem de Serviço</p>
       <br />
@@ -16,8 +16,8 @@
       <fieldset class="group">
         <div class="campo">
           <label for="Data">Data Produção</label>
-          <input type="date" name="Data" id="Data" />
-          <label for="Nome">Funcionario Responsável</label>
+          <input type="date" name="Data" id="nome" required />
+          <label for="nome">Funcionario Responsável</label>
           <input type="text" name="Nome" id="nome" required />
         </div>
       </fieldset>
@@ -45,11 +45,11 @@
       </div>
       <div class="campo">
         <label for="os">Numero Ordem de Serviço</label>
-        <input type="text" id="os" />
+        <input type="text" id="os" required />
       </div>
       <div class="campo">
         <label for="car">Modelo Carro</label>
-        <input type="text" id="car" />
+        <input type="text" id="car" required />
       </div>
       <fieldset class="group">
         <div class="campo">
@@ -100,9 +100,9 @@
       <div class="campo">
         <br />
         <label for="obs">Observação</label>
-        <textarea name="obs" id="obs" cols="30" rows="3"></textarea>
+        <textarea name="obs" id="obs" cols="40" rows="5"></textarea>
         <br />
-        <button type="submit">Enviar</button>
+        <button class="btn" type="submit">Enviar</button>
       </div>
     </form>
   </body>
