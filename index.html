@@ -8,22 +8,22 @@
   </head>
   <body>
     <div>
-      <h1>Powerglass</h1>
-      <p>Abertura de Ordem de Serviço</p>
+      <h1 id="title">Powerglass</h1>
+      <p id="subt">Abertura de Ordem de Serviço</p>
       <br />
     </div>
-    <form action="">
-      <fieldset>
-        <div id="Data">
+    <form>
+      <fieldset class="group">
+        <div class="campo">
           <label for="Data">Data Produção</label>
           <input type="date" name="Data" id="Data" />
-          <label for="Funcionario">Funcionario Responsável</label>
-          <input type="text" name="Nome" id="nome" />
+          <label for="Nome">Funcionario Responsável</label>
+          <input type="text" name="Nome" id="nome" required />
         </div>
       </fieldset>
-      <fieldset>
-        <div id="setor">
-          <label>Setor</label>
+      <fieldset class="group">
+        <div class="campo">
+          <label for="setor">Setor</label>
           <select name="Setor" id="setor">
             <option selected disabled value="">Selecione o setor</option>
             <option value="Corte">Corte</option>
@@ -36,20 +36,24 @@
           </select>
         </div>
       </fieldset>
-      <div id="producao">
-        <label>Produção</label>
+      <div class="campo">
+        <label for="opt">Tipo de Serviço</label>
         <label> <input type="radio" name="opt" />Kit completo </label>
         <label> <input type="radio" name="opt" />Reposição </label>
         <label> <input type="radio" name="opt" />Avulso</label>
         <label> <input type="radio" name="opt" />Garantia </label>
       </div>
-      <div id="modelCar">
-        <label>Modelo Carro</label>
-        <input type="text" />
+      <div class="campo">
+        <label for="os">Numero Ordem de Serviço</label>
+        <input type="text" id="os" />
       </div>
-      <fieldset>
-        <div id="corvidro">
-          <label>Cor Vidro</label>
+      <div class="campo">
+        <label for="car">Modelo Carro</label>
+        <input type="text" id="car" />
+      </div>
+      <fieldset class="group">
+        <div class="campo">
+          <label for="corvidro">Cor Vidro</label>
           <select name="Vidro" id="corvidro">
             <option selected disabled value="">Selecione</option>
             <option value="incolor">Incolor</option>
@@ -57,8 +61,8 @@
             <option value="Verde">Verde</option>
           </select>
         </div>
-        <div id="sensor">
-          <label>Sensor</label>
+        <div class="campo">
+          <label for="sensor">Sensor</label>
           <select name="sensor" id="sensor">
             <option selected disabled value="">Selecione</option>
             <option value="nosensor">Sem sensor</option>
@@ -66,9 +70,9 @@
             <option value="sensorcam">Sensor e câmera</option>
           </select>
         </div>
-        <div id="teto">
-          <label>Teto</label>
-          <select name="sensor" id="sensor">
+        <div class="campo">
+          <label for="teto">Teto</label>
+          <select name="teto" id="teto">
             <option selected disabled value="">Selecione</option>
             <option value="nosensor">TSA</option>
             <option value="sensor">TSA e TSB</option>
@@ -76,6 +80,30 @@
           </select>
         </div>
       </fieldset>
+      <div id="check">
+        <label for="banda"
+          >Banda: <input type="checkbox" />PDD <input type="checkbox" />PDE
+          <input type="checkbox" />PTD <input type="checkbox" />PTE
+          <input type="checkbox" />LTD <input type="checkbox" />LTE
+          <input type="checkbox" />PB <input type="checkbox" />VG
+          <input type="checkbox" />TSA <input type="checkbox" />TSA e TSB
+        </label>
+        <br />
+        <label for="Produção"
+          >Produção: <input type="checkbox" />PDD <input type="checkbox" />PDE
+          <input type="checkbox" />PTD <input type="checkbox" />PTE
+          <input type="checkbox" />LTD <input type="checkbox" />LTE
+          <input type="checkbox" />PB <input type="checkbox" />VG
+          <input type="checkbox" />TSA <input type="checkbox" />TSA e TSB
+        </label>
+      </div>
+      <div class="campo">
+        <br />
+        <label for="obs">Observação</label>
+        <textarea name="obs" id="obs" cols="30" rows="3"></textarea>
+        <br />
+        <button type="submit">Enviar</button>
+      </div>
     </form>
   </body>
 </html>
