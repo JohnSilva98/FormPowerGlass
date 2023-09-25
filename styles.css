@@ -33,6 +33,9 @@ button {
   border-radius: 5%;
 }
 
+#func {
+  margin-top: 5px;
+}
 .campo {
   margin-bottom: 1em;
 }
