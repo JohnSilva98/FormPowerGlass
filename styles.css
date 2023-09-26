@@ -39,8 +39,19 @@ button {
   border-radius: 5%;
 }
 
-#func {
-  margin-top: 5px;
+#relative-container {
+  position: relative;
+}
+
+.func {
+  position: absolute;
+  left: 120px;
+  bottom: 1px;
+}
+#lbfunc {
+  position: absolute;
+  left: 120px;
+  bottom: 20px;
 }
 .campo {
   margin-bottom: 1em;
