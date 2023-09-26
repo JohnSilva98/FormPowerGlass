@@ -43,15 +43,20 @@ button {
   position: relative;
 }
 
+#Data {
+  height: 25px;
+}
+
 .func {
   position: absolute;
+  height: 21px;
   left: 120px;
   bottom: 1px;
 }
 #lbfunc {
   position: absolute;
   left: 120px;
-  bottom: 20px;
+  bottom: 28px;
 }
 .campo {
   margin-bottom: 1em;
